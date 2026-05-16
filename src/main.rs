@@ -1,5 +1,8 @@
-mod module_one;
-use module_one::time_complexity::bubble_sort;
+mod complexity;
+use complexity::time_complexity::bubble_sort;
+
+mod sorting;
+use sorting::bubble_sort::bubble_sort_2;
 
 fn main() {
     // let arr_a = [1,2,3];
