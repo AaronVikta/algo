@@ -2,7 +2,9 @@ mod complexity;
 use complexity::time_complexity::bubble_sort;
 
 mod sorting;
-use sorting::bubble_sort::bubble_sort_2;
+use sorting::{bubble_sort::bubble_sort_2, insertion_sort::insertion_sort};
+
+
 
 fn main() {
     // let arr_a = [1,2,3];
@@ -26,7 +28,12 @@ fn main() {
     bubble_sort(&mut arr);
 
     println!("Sorted array: {:?}", arr);
+let mut arr2 = vec![5,2,9,1,5,6];
+    println!("Original array: {:?}", arr2);
 
+    insertion_sort(&mut arr2);
+
+    println!("Sorted array: {:?}", arr2);
 }
 
 
