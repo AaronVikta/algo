@@ -1,9 +1,10 @@
 mod complexity;
 use complexity::time_complexity::bubble_sort;
+mod leetcodes;
 
 mod sorting;
 use sorting::{bubble_sort::bubble_sort_2, insertion_sort::insertion_sort};
-
+use leetcodes::palindrome::is_palindrome;
 
 
 fn main() {
@@ -34,6 +35,10 @@ let mut arr2 = vec![5,2,9,1,5,6];
     insertion_sort(&mut arr2);
 
     println!("Sorted array: {:?}", arr2);
+
+    is_palindrome(121);
+
 }
+
 
 
